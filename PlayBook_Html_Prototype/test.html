@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <script src="test.js"></script>
+    <title>Playbook | Test</title>
+   <style>
+        .btn {
+            background: #3498db;
+            border-radius: 0px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 2px 2px 2px 2px;
+            text-decoration: none;
+            height: 30px;
+            width: 70px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .btn.active {
+            background: #cecece;
+            text-decoration: none;
+        }
+        </style>
+</head>
+<body>
+<blockquote>THIS IS OUTSIDE PLAYBOOK</blockquote>
+    <div id="playbook">
+        <div id="toolbar">
+            <input class="btn" id="SelectTool" type="button" value="Select" onclick="selectBtn(event)"/>
+            <input class="btn" id="CrossTool" type="button" value="Cross" onclick="crossBtn(event)"/>
+            <input class="btn" id="CircleTool" type="button" value="Circle" onclick="circleBtn(event)"/>
+            <input class="btn" id="DeleteTool" type="button" value="Delete" onclick="deleteBtn(event)"/>
+        </div>
+        <div id="editor" onmousedown="fieldClick(event);" ondragover="fieldDrag(event);" ondrop="dropTool(event);" oncontextmenu="menuTool(event);" style="width: 943px; height: 504px; z-index: -1; border: 2px; background-image: url('images/footballField.png');">
+            <div id="playContent"></div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+	<script src="/EaselJS-0.8.2/lib/easeljs-0.8.2.min.js"></script>
+	<script src="main.js"></script>
+
+
+</head>
+	<body onload="init();">
+		<dev>
+			<button onclick="trans()" >delete</button>
+			<button onclick="teamSwtich()" id="teamBtn" value="o" >team</button>
+			<button onclick="add()">Add</button>
+			<button onclick="del()">Del</button>
+			<button onclick="drag()">Drag</button>
+			<button onclick="grid()" id="gridBtn" value="off">Grid</button>
+			<button onclick="line()">line</button>
+			<button onclick="arc()">arc</button>
+			<p id="show"></p>
+			<canvas id="a" width="943" height="503"  style="border:1px solid #000000;" >
+			<canvas id="b" width="943" height="503" style="border:1px solid #000000;">
+
+			</canvas>
+			</canvas>
+			<p id="show2">0</p>
+		</dev>
+	</body>
+
+</html>
